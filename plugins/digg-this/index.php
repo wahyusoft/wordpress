@@ -1,5 +1,12 @@
 <?php
-/* Information Header Goes here */ 
+/*
+Plugin Name: Digg This
+Plugin URI: http://www.tipsfor.us/
+Description: Plugin tombol "Digg This" digunakan untuk menambah link pada konten. 
+Author: Everett Griffiths
+Version: 0.1
+Author URI: http://www.tipsfor.us/
+*/
 // include() or require() any necessary files here...
 // Settings and/or Configuration Details go here...
 // Tie into WordPress Hooks and any functions that should run on load.
