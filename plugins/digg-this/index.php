@@ -19,5 +19,18 @@ function _diggthis_get_post_url() { }
 // The "Public" functions
 function diggthis_add_js_to_doc_head() { }
 function diggthis_check_wordpress_version() { }
-function diggthis_get_button() { }
+
+add_filter('the_content', 'diggthis_get_button');
+
+// [ . . . ]
+/**
+* Adds a "Digg This" link to the post content.
+*
+* @param string $content the existing post content
+* @return string appends a DiggThis link to the incoming $content.
+*/
+
+function diggthis_get_button($content) { 
+    return $content . '<a class="DiggThisButton DiggMedium"></a>';
+}
 /* EOF */
